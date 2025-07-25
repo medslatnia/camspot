@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;700&display=swap");
+
+:root {
+  --font-playfair: "Playfair Display", serif;
+  --font-opensans: "Open Sans", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-opensans);
+  background-color: #ffffff;
+  color: #171717;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+}

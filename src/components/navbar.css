@@ -1,0 +1,45 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 16px;
+  background-color: transparent;
+  box-shadow: none;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+.hide-navbar {
+  opacity: 0;
+  pointer-events: none;
+}
+.nav-links a:hover {
+  color: #ffa216;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-family: var(--font-playfair);
+  font-weight: bold;
+  color: black; /* ⬅️ changed to black */
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.8rem;
+  list-style: none;
+  font-family: var(--font-opensans);
+  font-size: 1rem;
+  color: black; /* ⬅️ changed to black */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black; /* ⬅️ changed to black */
+}

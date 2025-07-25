@@ -1,0 +1,210 @@
+.landingWrapper {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: row;
+}
+
+.landingImage {
+  width: 723px;
+  height: 100vh; /* full viewport height */
+  background-image: url("/images/yellow_portrait.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.landingImage nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.landingContent {
+  flex: 1;
+  padding: 7% 4rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.landingContent h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.landingContent p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #666666;
+  max-width: 50ch;
+}
+
+.landingLabels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.label {
+  background-color: #f7f7f7;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.contactBox {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 9999px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 480px;
+  background-color: #f9f9f9;
+  padding: 0.5rem 0.5rem;
+}
+
+.phoneInput {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.contactButton {
+  padding: 0.75rem 1.5rem;
+  background-color: #ffa216;
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 9999px;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contactButton:hover {
+  background-color: #333;
+  color: white;
+}
+
+.hireMeBox {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 9999px;
+  padding: 0.5rem 0.75rem;
+  max-width: 480px;
+  width: 100%;
+}
+
+.hireText {
+  flex: 1;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  margin-right: 1rem;
+}
+
+.hireButton {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* 📱 Mobile Styles */
+@media (max-width: 768px) {
+  .landingWrapper {
+    flex-direction: column;
+  }
+
+  .landingImage {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 723 / 816;
+  }
+
+  .landingContent {
+    padding: 2rem;
+  }
+
+  .landingContent h1 {
+    font-size: 2rem;
+  }
+
+  .landingContent p {
+    font-size: 1rem;
+  }
+
+  .label {
+    font-size: 0.9rem;
+  }
+
+  .contactBox {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+    gap: 0.5rem;
+    border-radius: 1rem;
+  }
+
+  .phoneInput {
+    width: 100%;
+  }
+
+  .contactButton {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  .hireMeBox {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .hireText {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .hireButton {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+}
+
+.nextSection {
+  padding: 6rem 2rem;
+  background-color: #fafafa;
+  text-align: center;
+  color: #333;
+}
+
+.nextSection h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.nextSection p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
