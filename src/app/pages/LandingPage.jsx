@@ -31,15 +31,6 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-
-      {/* 👇 New Section */}
-      <section className={styles.nextSection}>
-        <h2>Why Choose Me?</h2>
-        <p>
-          I provide professional photography services with fast delivery and
-          full creativity.
-        </p>
-      </section>
     </>
   );
 }

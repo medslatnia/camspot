@@ -1,16 +1,17 @@
 .landingWrapper {
   display: flex;
-  height: 100vh;
+  min-height: 120vh;
   width: 100%;
   flex-direction: row;
 }
 
 .landingImage {
   width: 723px;
-  height: 100vh; /* full viewport height */
+  height: 816px;
   background-image: url("/images/yellow_portrait.jpg");
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
   position: relative;
   flex-shrink: 0;
 }
@@ -196,6 +197,7 @@
   background-color: #fafafa;
   text-align: center;
   color: #333;
+  margin-top: 2rem; /* Added to create space below landing section */
 }
 
 .nextSection h2 {
