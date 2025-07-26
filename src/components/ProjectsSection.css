@@ -1,0 +1,115 @@
+.ProjectsSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px 100px;
+  background-color: white;
+  gap: 4rem;
+  flex-wrap: nowrap;
+}
+
+.MyProjects {
+  flex: 1;
+  max-width: 35%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.MyProjects h5 {
+  font-family: "Playfair Display", bold;
+  font-size: 36px;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.MyProjects p {
+  font-size: 15px;
+  color: #666666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.Working .Title {
+  font-weight: bold;
+  color: black;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.learnMoreBtn {
+  margin-top: 2.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  color: black;
+  border: 3px solid #ffa216;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 50%;
+}
+
+.learnMoreBtn:hover {
+  background-color: #ffa216;
+  color: white;
+}
+
+.ProjectsImages {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.photoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 280px);
+  grid-template-rows: repeat(2, 300px);
+  gap: 20px;
+}
+
+.photoGrid img {
+  width: 280px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.photoGrid img {
+  width: 280px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.photoGrid img:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.photoGrid img:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.photoGrid img:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.photoGrid img:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.photoGrid img:nth-child(5) {
+  animation-delay: 1s;
+}
+.photoGrid img:nth-child(6) {
+  animation-delay: 1.2s;
+}
