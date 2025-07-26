@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+.CollaborationSection {
+  width: 100%;
+  font-family: sans-serif;
+}
+
+/* === COMPANIES BLOCK === */
+.companiesBlock {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.companiesBlock h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 2.5rem;
+}
+
+/* 7 logos in 2 rows: 4 then 3 */
+.logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 2rem 2rem;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.logos img {
+  height: 70px; /* bigger logos */
+  max-width: 100%;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.logos img:hover {
+  opacity: 1;
+}
+
+/* === NEWSLETTER & FOOTER === */
+.newsletterFooter {
+  background-color: #000;
+  color: #fff;
+  padding: 3rem 2rem;
+}
+
+.newsletter {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.newsletter h5 {
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.newsletter input[type="email"] {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.newsletter button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background-color: #ffa216;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footerLinks {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footerLinks nav {
+  margin-bottom: 1rem;
+}
+
+.footerLinks a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footerLinks a:hover {
+  color: #fff;
+}
+
+.footerLinks p {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .logos img {
+    height: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logos img {
+    height: 50px;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+.CollaborationSection {
+  width: 100%;
+  font-family: sans-serif;
+}
+
+/* === COMPANIES BLOCK === */
+.companiesBlock {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.companiesBlock h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 2.5rem;
+}
+
+/* 7 logos in 2 rows: 4 then 3 */
+.logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 2rem 2rem;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.logos img {
+  height: 70px; /* bigger logos */
+  max-width: 100%;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.logos img:hover {
+  opacity: 1;
+}
+
+.newsletterFooter {
+  background-color: #000;
+  color: #fff;
+  padding: 3rem 2rem;
+  font-family: "Playfair Display", serif;
+}
+
+.newsletter {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.newsletter h5 {
+  font-size: 22px;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.newsletter input[type="email"] {
+  padding: 0.85rem 1.2rem;
+  border: 1px solid #555;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  width: 280px;
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.newsletter input::placeholder {
+  color: #aaa;
+}
+
+.newsletter input:focus {
+  outline: none;
+  border-color: #ffa216;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.newsletter button {
+  padding: 0.85rem 2rem;
+  border: none;
+  background-color: #ffa216;
+  color: black;
+  border-radius: 40px;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.newsletter button:hover {
+  background-color: #ffb947;
+  transform: scale(1.03);
+}
+
+/* === FOOTER LINKS === */
+.footerLinks {
+  text-align: center;
+}
+
+.footerLinks nav {
+  margin-bottom: 1rem;
+}
+
+.footerLinks a {
+  color: #ccc;
+  margin: 0 12px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+  font-family: "Playfair Display", serif;
+}
+
+.footerLinks a:hover {
+  color: #fff;
+}
+
+.footerLinks p {
+  font-size: 13px;
+  color: #777;
+  font-family: "Playfair Display", serif;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .logos img {
+    height: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logos img {
+    height: 50px;
+  }
+}

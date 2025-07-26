@@ -5,6 +5,7 @@ import JobSection from "@/components/JobSection";
 import QuoteSection from "@/components/QuoteSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import CredibilitySection from "@/components/CredibilitySection";
+import CollaborationSection from "@/components/CollaborationSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <QuoteSection />
       <ProjectsSection />
       <CredibilitySection />
+      <CollaborationSection />
     </>
   );
 }
