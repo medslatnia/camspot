@@ -1,0 +1,80 @@
+.QuoteSection {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.QuoteElements {
+  max-width: 800px;
+  width: 100%;
+}
+
+.QuoteElements h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 32px;
+}
+
+.QuoteElements p {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 40px;
+  position: relative;
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.8s ease-out;
+  padding-left: 40px;
+  display: inline-block;
+  text-align: left;
+}
+
+.QuoteElements p.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.QuoteElements p::before {
+  content: "“";
+  font-size: 60px;
+  font-family: "Playfair Display", serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ffa216;
+  line-height: 1;
+}
+
+.DavidImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.DavidImage img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.DavidName {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+}
+
+.Signature {
+  font-family: "Oooh Baby", cursive;
+  font-size: 32px;
+  color: black;
+}

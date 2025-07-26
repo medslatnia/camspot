@@ -1,6 +1,8 @@
 import WorldClassSection from "@/components/WorldClassSection";
 import Navbar from "../components/Navbar";
 import LandingPage from "./pages/LandingPage";
+import JobSection from "@/components/JobSection";
+import QuoteSection from "@/components/QuoteSection";
 
 export default function Home() {
   return (
@@ -8,6 +10,8 @@ export default function Home() {
       <Navbar />
       <LandingPage />
       <WorldClassSection />
+      <JobSection />
+      <QuoteSection />
     </>
   );
 }
