@@ -34,8 +34,9 @@ export default function ProjectsSection() {
         </div>
         <div className="rightText">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque habitant morbi tristique senectus.
+            Professionalism is the commitment to excellence, respect, and
+            integrity in every action. It builds trust, ensures reliability, and
+            reflects a strong work ethic in all environments.
           </p>
         </div>
         <div className="fullImage">
