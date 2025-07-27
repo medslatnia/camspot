@@ -17,15 +17,22 @@ export default function ProjectsSection() {
 
         <div className="Working">
           <div className="Title">@ Gwen & Lily .Inc</div>
-          <p>Adipiscing elit pellentesque habitant morbi tristique senectus.</p>
+          <p>
+            Capturing moments with elegance and authenticity — Gwen & Lily .Inc
+            is where timeless photography meets modern creativity.
+          </p>
 
           <div className="Title">@ Pixel & Frame</div>
           <p>
-            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+            Turning stories into stills — Pixel & Frame delivers bold, emotive
+            photography tailored for every moment that matters.
           </p>
 
           <div className="Title">@ Studio Bright</div>
-          <p>Donec sollicitudin molestie malesuada.</p>
+          <p>
+            Where light meets artistry — Studio Bright specializes in vibrant,
+            heartfelt photography that brings every detail to life.
+          </p>
         </div>
 
         <button className="learnMoreBtn">MORE</button>
