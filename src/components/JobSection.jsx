@@ -62,7 +62,7 @@ export default function JobSection() {
       </div>
 
       <div className="skillsImage">
-        <img src="/images/Grey.jpg" alt="Photo 1" />
+        <img src="/images/GreySkills.jpg" alt="Photo 1" />
       </div>
 
       <div className="skillsImage">
