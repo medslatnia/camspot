@@ -13,7 +13,11 @@ export default function ProjectsSection() {
       {/* LEFT: Text */}
       <div className="MyProjects">
         <h5>My Projects</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        <p>
+          From web apps to creative platforms, my projects reflect a passion for
+          clean design, smart functionality, and real-world impact. Each build
+          is a step forward in innovation, usability, and visual storytelling.
+        </p>
 
         <div className="Working">
           <div className="Title">@ Gwen & Lily .Inc</div>
