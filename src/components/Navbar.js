@@ -1,6 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
 import "./navbar.css";
+import "./CollaborationSection";
+import "./WorldClassSection";
+import "./ProjectsSection";
 
 export default function Navbar() {
   const [hide, setHide] = useState(false);
@@ -17,24 +20,23 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar ${hide ? "hide-navbar" : ""}`}>
-      <h1 className="logo">CamSpot</h1>
-      <ul className="nav-links">
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">Pages</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Blog</a>
-        </li>
-      </ul>
+      <div className="navbar-container">
+        <h1 className="logo">CamSpot</h1>
+        <ul className="nav-links">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#worldclass">About</a>
+          </li>
+          <li>
+            <a href="#projects">Portfolio</a>
+          </li>
+          <li className="contact-box">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }

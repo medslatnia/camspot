@@ -9,7 +9,7 @@ export default function ProjectsSection() {
     animateOnScroll();
   }, []);
   return (
-    <section className="ProjectsSection">
+    <section id="projects" className="ProjectsSection">
       {/* LEFT: Text */}
       <div className="MyProjects">
         <h5>My Projects</h5>

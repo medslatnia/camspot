@@ -2,7 +2,7 @@ import "./CollaborationSection.css";
 
 export default function CollaborationSection() {
   return (
-    <section className="CollaborationSection">
+    <section id="contact" className="CollaborationSection">
       {/* === TITLE + LOGOS === */}
       <div className="companiesBlock">
         <h4>Worked and collaborated with world-class companies</h4>
@@ -29,7 +29,6 @@ export default function CollaborationSection() {
             <button type="submit">Subscribe</button>
           </form>
         </div>
-
         <div className="footerLinks">
           <nav>
             <a href="#">Home</a>

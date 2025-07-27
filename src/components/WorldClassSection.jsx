@@ -31,7 +31,7 @@ export default function WorldClassSection() {
   }, []);
 
   return (
-    <section className="worldClassSection" ref={sectionRef}>
+    <section id="worldclass" className="worldClassSection" ref={sectionRef}>
       <div className="textContainer">
         <h2 className="animate-fade-up">World-Class Photographer</h2>
         <p className="animate-fade-up">
