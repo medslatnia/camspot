@@ -235,3 +235,57 @@
   opacity: 1;
   transform: translateY(0);
 }
+.buttonRow {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.portfolioButton,
+.hireButton {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding: 12px 24px;
+  background-color: white;
+  color: black;
+  border-radius: 0;
+  border: 3px solid;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* Portfolio: black border */
+.portfolioButton {
+  border-color: black;
+}
+
+.portfolioButton:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Hire Me: yellow border */
+.hireButton {
+  border-color: #ffa216; /* Tailwind yellow-400 */
+}
+
+.hireButton:hover {
+  background-color: #ffa216;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .buttonRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .portfolioButton,
+  .hireButton {
+    width: 100%;
+    text-align: center;
+  }
+}

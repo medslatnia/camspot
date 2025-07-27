@@ -1,8 +1,29 @@
+"use client";
+import { useEffect, useRef } from "react";
 import "./CredibilitySection.css";
 
 export default function ProjectsSection() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          section.classList.add("animate");
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (section) observer.observe(section);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="ProjectsSection">
+    <section className="ProjectsSection" ref={sectionRef}>
       <div className="gridContainer">
         <div className="leftText">
           <h5>

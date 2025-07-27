@@ -98,3 +98,39 @@
     font-size: 14px;
   }
 }
+/* ========== ANIMATION KEYFRAMES ========== */
+@keyframes slideFadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.ProjectsSection:not(.animate) .leftText,
+.ProjectsSection:not(.animate) .rightText {
+  opacity: 0;
+}
+
+.ProjectsSection.animate .leftText {
+  animation: slideFadeLeft 0.9s ease-out forwards;
+}
+
+.ProjectsSection.animate .rightText {
+  animation: slideFadeRight 0.9s ease-out forwards;
+  animation-delay: 0.2s;
+}

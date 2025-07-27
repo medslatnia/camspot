@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import styles from "../styles/Landing.module.css";
 import Navbar from "@/components/Navbar";
+import CollaborationSection from "@/components/CollaborationSection";
 
 export default function LandingPage() {
   useEffect(() => {
@@ -59,18 +60,13 @@ export default function LandingPage() {
               </div>
             </div>
 
-            <div className={`${styles.contactBox} ${styles.fadeInOnScroll}`}>
-              <input
-                type="tel"
-                placeholder="Enter your phone number.."
-                className={styles.phoneInput}
-              />
-              <button className={styles.contactButton}>Get in touch</button>
-            </div>
-
-            <div className={`${styles.hireMeBox} ${styles.fadeInOnScroll}`}>
-              <p className={styles.hireText}>Hire me for a professional job</p>
-              <button className={styles.hireButton}>PORTFOLIO</button>
+            <div className={`${styles.buttonRow} ${styles.fadeInOnScroll}`}>
+              <a href="#projects" className={styles.portfolioButton}>
+                PORTFOLIO
+              </a>
+              <a href="#contact" className={styles.hireButton}>
+                HIRE ME
+              </a>
             </div>
           </div>
         </div>

@@ -1,6 +1,22 @@
+"use client";
+import { useState } from "react";
 import "./CollaborationSection.css";
 
 export default function CollaborationSection() {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (!isValidEmail) {
+      setMessage("Kindly enter a valid email address.");
+    } else {
+      setMessage("Thank you! Please check your inbox for further updates.");
+      setEmail("");
+    }
+  };
+
   return (
     <section id="contact" className="CollaborationSection">
       {/* === TITLE + LOGOS === */}
@@ -20,15 +36,22 @@ export default function CollaborationSection() {
       {/* === NEWSLETTER + FOOTER === */}
       <div className="newsletterFooter">
         <div className="newsletter">
-          <h5>Subscribe newsletter for interesting information</h5>
-          <form>
+          <h5>
+            Kindly provide your email address, and we will reach out to you with
+            valuable updates.
+          </h5>
+          <form onSubmit={handleSubmit}>
             <input
               type="email"
-              placeholder="Enter your email to subscribe ..."
+              placeholder="e.g., mo@gmail.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
-            <button type="submit">Subscribe</button>
+            <button type="submit">Send</button>
           </form>
+          {message && <p className="feedbackMessage">{message}</p>}
         </div>
+
         <div className="footerLinks">
           <nav>
             <a href="#">Home</a>

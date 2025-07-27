@@ -28,7 +28,7 @@ export default function ProjectsSection() {
           <p>Donec sollicitudin molestie malesuada.</p>
         </div>
 
-        <button className="learnMoreBtn">LEARN MORE</button>
+        <button className="learnMoreBtn">MORE</button>
       </div>
 
       {/* RIGHT: Image Grid */}
